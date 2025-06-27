@@ -54,7 +54,7 @@ interface DeleteService {
 
 
 class Kartochka: AppCompatActivity() {
-    private val url = "https://direct-capital-scorpion.ngrok-free.app/"
+    private val url = "https://filesexchange.ru.tuna.am/"
 
     private val retrofit = Retrofit.Builder()
         .baseUrl(url)

@@ -35,7 +35,7 @@ class MainActivity : AppCompatActivity() {
 
     private lateinit var sharedPreferences: SharedPreferences
 
-    private val url = "https://direct-capital-scorpion.ngrok-free.app/"
+    private val url = "https://filesexchange.ru.tuna.am/"
 
     private val retrofit = Retrofit.Builder()
         .baseUrl(url)
@@ -74,7 +74,7 @@ class MainActivity : AppCompatActivity() {
             override fun onFailure(call: Call<LoginResponse>, t: Throwable) {
                 AlertDialog.Builder(this@MainActivity)
                     .setTitle("Ошибка")
-                    .setMessage("Ошибка сети")
+                    .setMessage(t.message)
                     .setPositiveButton("OK", null)
                     .show()
             }

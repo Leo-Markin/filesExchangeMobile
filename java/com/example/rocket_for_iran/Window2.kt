@@ -66,7 +66,7 @@ interface UploadService {
 
 class Window2:AppCompatActivity() {
 
-    private val url = "https://direct-capital-scorpion.ngrok-free.app/"
+    private val url = "https://filesexchange.ru.tuna.am/"
 
     private val retrofit = Retrofit.Builder()
         .baseUrl(url)
@@ -75,7 +75,6 @@ class Window2:AppCompatActivity() {
         .build()
 
     private val filesService = retrofit.create(FilesService::class.java)
-
     private val resultat = registerForActivityResult(ActivityResultContracts.StartActivityForResult()){
         val sharedPreferences = PreferenceManager.getDefaultSharedPreferences(this)
         val token_api = sharedPreferences.getString("token_api", null).toString()
