@@ -12,6 +12,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Rocket_for_Iran"
+        android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
             android:name=".MainActivity"
@@ -30,7 +31,7 @@
             <category android:name="android.intent.category.DEFAULT" />
             <category android:name="android.intent.category.BROWSABLE" />
                 <data
-                    android:host="direct-capital-scorpion.ngrok-free.app"
+                    android:host="filesexchange.ru.tuna.am"
                     android:pathPrefix="/files"
                     android:scheme="https"/>
             </intent-filter>
